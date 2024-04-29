@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "2x Video Speed",
+  "version": "1.0",
+  "description": "Force video to play at 2x speed.",
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": ["scripts/controller.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
